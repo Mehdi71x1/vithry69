@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@xn_vithry.mh_69</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000;
+            color: #00ff00;
+            margin: 0;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            height: 100vh; /* Full height */
+            overflow-y: scroll; /* Allow vertical scroll */
+        }
+        .profile {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 3px solid #00ff00;
+        }
+        .experience {
+            margin-top: 20px;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .bar {
+            background-color: #444;
+            border-radius: 5px;
+            margin: 10px 0;
+            width: 100%;
+            height: 25px;
+            overflow: hidden;
+        }
+        .progress {
+            height: 100%;
+            background-color: #00ff00;
+            border-radius: 5px;
+            width: 0%;
+            transition: width 2s ease;
+        }
+        .about-me {
+            display: inline-block;
+            white-space: pre-wrap;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #00ff00; /* Green */
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none; /* Remove underline for links */
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .button:hover {
+            background-color: #00cc00; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile">
+        <img src="https://raw.githubusercontent.com/Mehdi71x1/vithry69/refs/heads/main/admin.png" alt="Your Name">
+        <h1>XN.Vithry.MH69</h1>
+        <p class="about-me" id="aboutMe"></p>
+    </div>
+
+    <div class="experience">
+        <h2>My Skills</h2>
+        <div>Photo Edit <span>93%</span></div>
+        <div class="bar">
+            <div class="progress" id="htmlProgress"></div>
+        </div>
+        <div>Video Edit <span>70%</span></div>
+        <div class="bar">
+            <div class="progress" id="cssProgress"></div>
+        </div>
+        <div>Photographer <span>99%</span></div>
+        <div class="bar">
+            <div class="progress" id="jsProgress"></div>
+        </div>
+    </div>
+
+    <a href="https://www.tiktok.com/@xn_vithry.mh_69?_t=8qvU0kPr3WS&_r=1">Contact Me</a>
+
+    <script>
+        const aboutText = "হাই ফ্রেন্ড 
+
+আমি vithry 
+
+ আমি একজন নিয়মিত টিক টকার 
+
+আমার ভিডিও গুলোতে সবায় লাইক করবেন 
+
+এবং  আমার আইডি টা ফলো দিয়ে রাখবেন 
+
+Tenx All";
+        let index = 0;
+
+        function typeWriter() {
+            if (index < aboutText.length) {
+                document.getElementById("aboutMe").innerHTML += aboutText.charAt(index);
+                index++;
+                setTimeout(typeWriter, 50);
+            }
+        }
+
+        function animateProgress() {
+            document.getElementById("htmlProgress").style.width = "93%";
+            document.getElementById("cssProgress").style.width = "70%";
+            document.getElementById("jsProgress").style.width = "98%";
+        }
+
+        typeWriter();
+        window.onload = animateProgress;
+
+        // Function to scroll down
+        function scrollDown() {
+            window.scrollBy({
+                top: window.innerHeight, // Scroll down by the height of the viewport
+                behavior: 'smooth' // Smooth scroll effect
+            });
+        }
+
+        // Automatically scroll down after typing is complete
+        setTimeout(scrollDown, aboutText.length * 50);
+    </script>
+
+</body>
+</html>
